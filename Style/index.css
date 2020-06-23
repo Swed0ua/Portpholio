@@ -1,0 +1,487 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/** All screens settings **/
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen:nth-child(even) {
+  background-color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #3e353c;
+  color: #E9E5E0;
+  font-size: 30px;
+}
+
+/** Screen 1 **/
+
+.screen_1 {
+  height: auto;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 35vh;
+}
+
+.header__bgEllipse {
+  position: absolute;
+  width: 200%;
+  height: 100vh;
+  background-color: #392358;
+  border-radius: 90%;
+  left: 0;
+  top: 0;
+  margin-top: -65vh;
+  margin-left: -25%;
+  z-index: -1;
+}
+
+.header__bgEllipseEclipse {
+  position: absolute;
+  width: 200%;
+  height: 100vh;
+  background-color: #392358;
+  border-radius: 90%;
+  left: 0;
+  top: 0;
+  margin-top: -65vh;
+  margin-left: -25%;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 22, 164, 1) 0%,
+    rgba(50, 131, 103, 1) 30%,
+    rgba(22, 239, 43, 1) 90%
+  );
+  z-index: -5;
+  filter: blur(25px);
+}
+
+.myPhoto {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+  background-color: chartreuse;
+  border-radius: 90%;
+  margin-top: 5vh;
+  margin-left: 5vh;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0.5px #000000a9;
+}
+
+.myPhoto > img {
+  height: 100%;
+}
+
+.MyName {
+  position: absolute;
+  left: 20%;
+  top: 7vh;
+  font-family: "Krona One", sans-serif;
+  font-size: 300%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #48debf;
+}
+
+.myDescription {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.myDescriptions__wrapperText > .III {
+  color: #45de78;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.myDescriptions__wrapperText > .iii {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #48debf;
+}
+
+/** Menu Scr1 **/
+
+.menu {
+  padding: 10px;
+  margin-left: calc(50% - 475px);
+}
+
+.menu__item {
+  width: 250px;
+  height: 320px;
+  background-color: #fceaea;
+  float: left;
+  margin: 30px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.menu__item::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: yellow;
+  z-index: -1;
+  border-radius: 40px;
+}
+
+.menu__item::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: yellow;
+  z-index: -2;
+  filter: blur(10px);
+  border-radius: 40px;
+}
+
+.menu__item::after,
+.menu__item::before {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 251, 14, 1) 0%,
+    rgba(255, 28, 119, 1) 100%
+  );
+}
+
+.menu__item > .menu__name {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 24px;
+}
+
+.menu__item > .menu__icon {
+  height: 45%;
+  padding: 15px;
+  padding-top: 0;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+
+.menu__item > .menu__icon > img {
+  height: 100%;
+}
+
+.menu__icon_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__button {
+  text-align: center;
+  padding: 15px;
+  z-index: 15;
+}
+
+.menu__button > a {
+  text-decoration: none;
+  color: #d3e8da;
+  background-color: #cf2a2a;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+}
+
+.menu__button > a:hover {
+  box-shadow: 0 0 10px 1px #cf2a2a9f;
+  transition: box-shadow ease-in 0.15s;
+}
+
+/** Screen 2 (Slider) **/
+
+.name__scr2 {
+  position: absolute;
+  color: #fff;
+  z-index: 5;
+  width: 100%;
+}
+
+.name__scr2>h2 {
+  text-align: center;
+}
+
+.prev {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: calc(50% - 50px);
+  opacity: 40%;
+}
+
+.prev > img {
+  width: 100px;
+  height: 100px;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 100%;
+}
+
+.prev:active,
+.next:active {
+  opacity: 80%;
+}
+
+.next {
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 50px);
+  opacity: 40%;
+}
+
+.next > img {
+  width: 100px;
+  height: 100px;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+.this__slide {
+  opacity: 100%;
+}
+
+.currentIdSlide__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+}
+
+.currentIdSlide {
+  width: 10px;
+  height: 10px;
+  background-color: violet;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.thisCurrentId {
+  width: 13px;
+  height: 12px;
+  background-color: beige;
+}
+
+
+/** Screen 3 **/
+
+.screen_3 {
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.scr3__wrapper {
+  background: url(../img/oooAi_bg-01.svg) ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  
+}
+
+.scr3__content {
+  background-color: rgb(245, 238, 238);
+  box-shadow: 0 0 10px 1px #000;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+}
+
+.name__scr3 {
+  text-align: center;
+  color: #000;
+}
+
+.name__scr3>h2 {
+  margin-bottom: 30px;
+}
+
+.businessCard__wrapper {
+  margin-left: calc(50% - 410px);
+}
+
+.businessCard {
+  border-radius: 30px;
+  width: 350px;
+  height: 200px;
+  background-color: darkgreen;
+  float: left;
+  margin: 30px;
+  box-shadow: 0 0 10px 0.5px #00000075;
+  float: left;
+  position: relative;
+}
+
+.businessCard_content {
+  color: #D8D4CD;
+  font-size: 111px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  background-color: yellow;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.businessCard__content_1{
+  background-color: #936AB2;
+}
+
+.businessCard__content_2{
+  background-color: #187AE6;
+}
+
+.businessCard__content_3{
+  background-color: #D83BBF;
+}
+
+.businessCard__content_4{
+  background-color: #43AEDE;
+}
+
+.businessCard_contentRight {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.businessCard_1{
+  background-color: #8C66A9;
+}
+
+.businessCard_2{
+  background-color: #046EE2;
+}
+
+.businessCard_3{
+  background-color: #CD25B2;
+}
+
+.businessCard_4{
+  background-color: #2DA1D4;
+}
+
+/** Media screen **/
+
+@media screen and (max-width: 1225px){
+  .businessCard__wrapper {
+    margin-left: calc(50% - 205px);
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .menu {
+    padding: 10px;
+    margin-left: calc(50% - 320px);
+  }
+
+  .MyName {
+    max-width: 30%;
+    left: 28%;
+  }
+
+  .myPhoto {
+    min-width: 140px;
+    min-height: 140px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .menu {
+    padding: 10px;
+    margin-left: calc(50% - 165px);
+  }
+
+  .MyName{
+    font-size: 200%;
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .scr3__content{
+    width: 100%;
+  }
+
+  .myDescription {
+    display: none;
+  }
+
+  .MyName{
+    font-size: 180%;
+    left: 45%;
+  }
+}

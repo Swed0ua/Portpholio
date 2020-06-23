@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="Style/index.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="screen screen_1">
+      <header>
+        <div class="header__bgEllipse"></div>
+        <div class="header__bgEllipseEclipse"></div>
+        <div class="myPhoto">
+          <img
+            src="img/38168741_2136782046596446_9046024187138801664_n.jpg"
+            alt="it's my photo"
+          />
+        </div>
+        <div class="MyName">Shmagala Andriy</div>
+        <div class="myDescription">
+          <div class="myDescriptions__wrapperText">
+            <span class="III">на фрілансі:</span> <br />
+            <span class="iii">новачок</span> <br />
+            <span class="III">розробляю:</span> <br />
+            <span class="iii">веб-дизайн <br />
+              верстка</span>
+            <br />
+            <span class="III">країна проживання:</span> <br />
+            <span class="iii">Україна 🇺🇦</span>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+          <div class="menu__item menu__item_1"><div class="menu__name">мої роботи</div><div class="menu__icon"><img src="img/iconJobASupport-02.png" alt="Icon"></div><div class="menu__button"><a href="">перейти</a></div></div>
+          <div class="menu__item menu__item_2"><div class="menu__name">як звязатися</div><div class="menu__icon"><img src="img/iconJobASupport-03.png" alt="Icon"></div><div class="menu__button"><a href="">перейти</a></div></div>
+          <div class="menu__item menu__item_3"><div class="menu__name">фриланс біржа</div><div class="menu__icon menu__icon_3">freelance.ru</div><div class="menu__button"><a href="https://freelance.ru/swed0001" target="_blank"><span>перейти</span></a></div></div>
+      </div>
+    </div>
+    <div class="screen screen_2">
+      <div class="slider">
+        <div class="name__scr2"><h2>мої роботи</h2></div>
+      <div class="prev" onclick="nextSlide(-1)"><img src="img/IconLeft.png" alt="but"></div>
+      <div class="next" onclick="nextSlide(1)"><img src="img/IconRight.png" alt="but"></div>
+      <div class="slide slide_1"><img src="img/Slide1.jpg" alt="slide"></div>
+      <div class="slide slide_2"><img src="img/Slide2.jpg" alt="slide"></div>
+      <div class="slide slide_3"><img src="img/Slide3.jpg" alt="slide"></div>
+      <div class="slide slide_4 this__slide"><img src="img/Slide4.jpg" alt="slide"></div>
+      <div class="slide slide_5"><img src="img/Slide5.jpg" alt="slide"></div>
+      <div class="currentIdSlide__wrapper">
+        <div onclick="current(0)" class="currentIdSlide"></div>
+        <div onclick="current(1)" class="currentIdSlide"></div>
+        <div onclick="current(2)" class="currentIdSlide"></div>
+        <div onclick="current(3)" class="currentIdSlide thisCurrentId"></div>
+        <div onclick="current(4)" class="currentIdSlide"></div>
+      </div>
+    </div></div>
+    <div class="screen screen_3">
+      <div class="scr3__wrapper">
+        <div class="scr3__content">
+          <div class="name__scr3"><h2>як зі мною зв'язатися</h2></div>
+          <div class="businessCard__wrapper">
+          <div class="businessCard businessCard_1"><div class="businessCard_content businessCard__content_1">V</div><div class="businessCard_contentRight"><span>viber : <br> +380682428953</span></div></div>
+          <div class="businessCard businessCard_2"><div class="businessCard_content businessCard__content_2">f</div><div class="businessCard_contentRight"><span>facebook: <br> id=100004440146034</span></div></div>
+          <div class="businessCard businessCard_3"><div class="businessCard_content businessCard__content_3">i</div><div class="businessCard_contentRight"><span>instagram: <br> tipe_rwr</span></div></div>
+          <div class="businessCard businessCard_4"><div class="businessCard_content businessCard__content_4">T</div><div class="businessCard_contentRight"><span>telegram: <br> +380682428953</span></div></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <footer>Дякую за перегляд</footer>
+
+    <script src="Scripts/slider.js"></script>
+  </body>
+</html>
