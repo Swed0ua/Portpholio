@@ -23,7 +23,7 @@ footer {
   width: 100%;
   height: 80px;
   background-color: #3e353c;
-  color: #E9E5E0;
+  color: #e9e5e0;
   font-size: 30px;
 }
 
@@ -234,7 +234,7 @@ header {
   width: 100%;
 }
 
-.name__scr2>h2 {
+.name__scr2 > h2 {
   text-align: center;
 }
 
@@ -285,10 +285,12 @@ header {
   height: 100%;
   opacity: 0;
   position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 .slide > img {
-  width: 100%;
+  height: 100%;
 }
 
 .this__slide {
@@ -319,7 +321,6 @@ header {
   background-color: beige;
 }
 
-
 /** Screen 3 **/
 
 .screen_3 {
@@ -329,14 +330,13 @@ header {
 }
 
 .scr3__wrapper {
-  background: url(../img/oooAi_bg-01.svg) ;
+  background: url(../img/oooAi_bg-01.svg);
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   height: auto;
   min-height: 100vh;
-  
 }
 
 .scr3__content {
@@ -354,7 +354,7 @@ header {
   color: #000;
 }
 
-.name__scr3>h2 {
+.name__scr3 > h2 {
   margin-bottom: 30px;
 }
 
@@ -375,7 +375,7 @@ header {
 }
 
 .businessCard_content {
-  color: #D8D4CD;
+  color: #d8d4cd;
   font-size: 111px;
   display: flex;
   justify-content: center;
@@ -389,20 +389,20 @@ header {
   border-bottom-right-radius: 80px;
 }
 
-.businessCard__content_1{
-  background-color: #936AB2;
+.businessCard__content_1 {
+  background-color: #936ab2;
 }
 
-.businessCard__content_2{
-  background-color: #187AE6;
+.businessCard__content_2 {
+  background-color: #187ae6;
 }
 
-.businessCard__content_3{
-  background-color: #D83BBF;
+.businessCard__content_3 {
+  background-color: #d83bbf;
 }
 
-.businessCard__content_4{
-  background-color: #43AEDE;
+.businessCard__content_4 {
+  background-color: #43aede;
 }
 
 .businessCard_contentRight {
@@ -418,25 +418,25 @@ header {
   font-size: 18px;
 }
 
-.businessCard_1{
-  background-color: #8C66A9;
+.businessCard_1 {
+  background-color: #8c66a9;
 }
 
-.businessCard_2{
-  background-color: #046EE2;
+.businessCard_2 {
+  background-color: #046ee2;
 }
 
-.businessCard_3{
-  background-color: #CD25B2;
+.businessCard_3 {
+  background-color: #cd25b2;
 }
 
-.businessCard_4{
-  background-color: #2DA1D4;
+.businessCard_4 {
+  background-color: #2da1d4;
 }
 
 /** Media screen **/
 
-@media screen and (max-width: 1225px){
+@media screen and (max-width: 1225px) {
   .businessCard__wrapper {
     margin-left: calc(50% - 205px);
   }
@@ -465,14 +465,14 @@ header {
     margin-left: calc(50% - 165px);
   }
 
-  .MyName{
+  .MyName {
     font-size: 200%;
     left: 35%;
   }
 }
 
-@media screen and (max-width: 550px){
-  .scr3__content{
+@media screen and (max-width: 550px) {
+  .scr3__content {
     width: 100%;
   }
 
@@ -480,7 +480,7 @@ header {
     display: none;
   }
 
-  .MyName{
+  .MyName {
     font-size: 180%;
     left: 45%;
   }
